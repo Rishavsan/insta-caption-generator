@@ -1,0 +1,31 @@
+2026-03-16 13:06:52,262 | INFO | app | Logging configured level=INFO file=C:\Disk D\AI dump\instagram_caption_generatorv2\backend\logs\app.log
+2026-03-16 13:06:52,262 | INFO | uvicorn.error | Started server process [29352]
+2026-03-16 13:06:52,262 | INFO | uvicorn.error | Waiting for application startup.
+2026-03-16 13:06:52,262 | INFO | app | Starting application
+2026-03-16 13:06:53,607 | INFO | app | Database tables ensured
+2026-03-16 13:06:53,607 | INFO | uvicorn.error | Application startup complete.
+2026-03-16 13:07:18,292 | INFO | app.request | Request started method=OPTIONS path=/api/v1/auth/login client=127.0.0.1
+2026-03-16 13:07:18,295 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/auth/login status=200 duration_ms=1.16
+2026-03-16 13:07:18,295 | INFO | uvicorn.access | 127.0.0.1:58170 - "OPTIONS /api/v1/auth/login HTTP/1.1" 200
+2026-03-16 13:07:18,295 | INFO | app.request | Request started method=POST path=/api/v1/auth/login client=127.0.0.1
+2026-03-16 13:07:18,312 | INFO | app.routers.auth | Login attempt email=rishav@gmail.com
+2026-03-16 13:07:18,796 | INFO | app.routers.auth | Login successful user_id=1 email=rishav@gmail.com
+2026-03-16 13:07:18,870 | INFO | app.request | Request completed method=POST path=/api/v1/auth/login status=200 duration_ms=571.85
+2026-03-16 13:07:18,870 | INFO | uvicorn.access | 127.0.0.1:58170 - "POST /api/v1/auth/login HTTP/1.1" 200
+2026-03-16 13:07:19,203 | INFO | app.request | Request started method=OPTIONS path=/api/v1/auth/me client=127.0.0.1
+2026-03-16 13:07:19,204 | INFO | app.request | Request started method=OPTIONS path=/api/v1/auth/me client=127.0.0.1
+2026-03-16 13:07:19,204 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/auth/me status=200 duration_ms=1.89
+2026-03-16 13:07:19,205 | INFO | uvicorn.access | 127.0.0.1:58170 - "OPTIONS /api/v1/auth/me HTTP/1.1" 200
+2026-03-16 13:07:19,206 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/auth/me status=200 duration_ms=1.74
+2026-03-16 13:07:19,206 | INFO | uvicorn.access | 127.0.0.1:53205 - "OPTIONS /api/v1/auth/me HTTP/1.1" 200
+2026-03-16 13:07:19,208 | INFO | app.request | Request started method=GET path=/api/v1/auth/me client=127.0.0.1
+2026-03-16 13:07:19,469 | INFO | app.request | Request completed method=GET path=/api/v1/auth/me status=200 duration_ms=261.53
+2026-03-16 13:07:19,469 | INFO | uvicorn.access | 127.0.0.1:58170 - "GET /api/v1/auth/me HTTP/1.1" 200
+2026-03-16 13:07:19,471 | INFO | app.request | Request started method=GET path=/api/v1/auth/me client=127.0.0.1
+2026-03-16 13:07:19,736 | INFO | app.request | Request completed method=GET path=/api/v1/auth/me status=200 duration_ms=264.08
+2026-03-16 13:07:19,736 | INFO | uvicorn.access | 127.0.0.1:58170 - "GET /api/v1/auth/me HTTP/1.1" 200
+2026-03-16 13:07:33,665 | INFO | uvicorn.error | Shutting down
+2026-03-16 13:07:33,771 | INFO | uvicorn.error | Waiting for application shutdown.
+2026-03-16 13:07:33,771 | INFO | app | Stopping application
+2026-03-16 13:07:33,772 | INFO | uvicorn.error | Application shutdown complete.
+2026-03-16 13:07:33,772 | INFO | uvicorn.error | Finished server process [29352]

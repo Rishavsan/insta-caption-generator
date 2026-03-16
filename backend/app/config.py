@@ -29,6 +29,8 @@ class Settings(BaseSettings):
     JWT_ACCESS_TOKEN_EXPIRE_MINUTES: int = 60
     JWT_ALGORITHM: str = "HS256"
     CORS_ORIGINS: str = "http://localhost:3000"
+    LOG_LEVEL: str = "INFO"
+    LOG_FILE: str = "logs/app.log"
 
     model_config = SettingsConfigDict(
         env_file=".env",
@@ -44,6 +46,14 @@ class Settings(BaseSettings):
     def database_url(self) -> str:
         # Prefer Supabase when provided, but keep DATABASE_URL for compatibility.
         return _normalize_database_url(self.SUPABASE_DB_URL or self.DATABASE_URL)
+
+    @property
+    def log_level(self) -> str:
+        return self.LOG_LEVEL
+
+    @property
+    def log_file(self) -> str:
+        return self.LOG_FILE
 
 
 settings = Settings()
