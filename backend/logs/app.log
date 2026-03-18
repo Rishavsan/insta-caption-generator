@@ -29,3 +29,246 @@
 2026-03-16 13:07:33,771 | INFO | app | Stopping application
 2026-03-16 13:07:33,772 | INFO | uvicorn.error | Application shutdown complete.
 2026-03-16 13:07:33,772 | INFO | uvicorn.error | Finished server process [29352]
+2026-03-16 13:25:55,266 | INFO | app | Logging configured level=INFO file=C:\Disk D\AI dump\instagram_caption_generatorv2\backend\logs\app.log
+2026-03-16 13:25:55,271 | INFO | uvicorn.error | Started server process [29968]
+2026-03-16 13:25:55,272 | INFO | uvicorn.error | Waiting for application startup.
+2026-03-16 13:25:55,272 | INFO | app | Starting application
+2026-03-16 13:25:56,923 | INFO | app | Database tables ensured
+2026-03-16 13:25:56,923 | INFO | uvicorn.error | Application startup complete.
+2026-03-16 13:26:11,668 | INFO | app.request | Request started method=OPTIONS path=/api/v1/auth/login client=127.0.0.1
+2026-03-16 13:26:11,669 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/auth/login status=200 duration_ms=0.97
+2026-03-16 13:26:11,669 | INFO | uvicorn.access | 127.0.0.1:59237 - "OPTIONS /api/v1/auth/login HTTP/1.1" 200
+2026-03-16 13:26:11,669 | INFO | app.request | Request started method=POST path=/api/v1/auth/login client=127.0.0.1
+2026-03-16 13:26:11,684 | INFO | app.routers.auth | Login attempt email=rishav@gmail.com
+2026-03-16 13:26:12,143 | INFO | app.routers.auth | Login successful user_id=1 email=rishav@gmail.com
+2026-03-16 13:26:12,210 | INFO | app.request | Request completed method=POST path=/api/v1/auth/login status=200 duration_ms=540.45
+2026-03-16 13:26:12,210 | INFO | uvicorn.access | 127.0.0.1:59237 - "POST /api/v1/auth/login HTTP/1.1" 200
+2026-03-16 13:26:12,615 | INFO | app.request | Request started method=OPTIONS path=/api/v1/auth/me client=127.0.0.1
+2026-03-16 13:26:12,615 | INFO | app.request | Request started method=OPTIONS path=/api/v1/posts client=127.0.0.1
+2026-03-16 13:26:12,617 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/auth/me status=200 duration_ms=2.85
+2026-03-16 13:26:12,618 | INFO | uvicorn.access | 127.0.0.1:59237 - "OPTIONS /api/v1/auth/me HTTP/1.1" 200
+2026-03-16 13:26:12,619 | INFO | app.request | Request started method=OPTIONS path=/api/v1/auth/me client=127.0.0.1
+2026-03-16 13:26:12,620 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/posts status=200 duration_ms=4.13
+2026-03-16 13:26:12,620 | INFO | uvicorn.access | 127.0.0.1:62590 - "OPTIONS /api/v1/posts HTTP/1.1" 200
+2026-03-16 13:26:12,620 | INFO | app.request | Request started method=OPTIONS path=/api/v1/posts client=127.0.0.1
+2026-03-16 13:26:12,622 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/auth/me status=200 duration_ms=3.33
+2026-03-16 13:26:12,623 | INFO | uvicorn.access | 127.0.0.1:54323 - "OPTIONS /api/v1/auth/me HTTP/1.1" 200
+2026-03-16 13:26:12,624 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/posts status=200 duration_ms=2.55
+2026-03-16 13:26:12,624 | INFO | uvicorn.access | 127.0.0.1:59237 - "OPTIONS /api/v1/posts HTTP/1.1" 200
+2026-03-16 13:26:12,625 | INFO | app.request | Request started method=GET path=/api/v1/auth/me client=127.0.0.1
+2026-03-16 13:26:12,626 | INFO | app.request | Request started method=GET path=/api/v1/posts client=127.0.0.1
+2026-03-16 13:26:12,894 | INFO | app.request | Request completed method=GET path=/api/v1/auth/me status=200 duration_ms=268.51
+2026-03-16 13:26:12,894 | INFO | uvicorn.access | 127.0.0.1:62590 - "GET /api/v1/auth/me HTTP/1.1" 200
+2026-03-16 13:26:12,897 | INFO | app.request | Request started method=GET path=/api/v1/auth/me client=127.0.0.1
+2026-03-16 13:26:13,162 | INFO | app.request | Request completed method=GET path=/api/v1/auth/me status=200 duration_ms=269.31
+2026-03-16 13:26:13,168 | INFO | uvicorn.access | 127.0.0.1:62590 - "GET /api/v1/auth/me HTTP/1.1" 200
+2026-03-16 13:26:13,398 | INFO | app.request | Request completed method=GET path=/api/v1/posts status=200 duration_ms=775.66
+2026-03-16 13:26:13,403 | INFO | uvicorn.access | 127.0.0.1:54323 - "GET /api/v1/posts HTTP/1.1" 200
+2026-03-16 13:26:13,406 | INFO | app.request | Request started method=GET path=/api/v1/posts client=127.0.0.1
+2026-03-16 13:26:13,758 | INFO | app.request | Request completed method=GET path=/api/v1/posts status=200 duration_ms=351.16
+2026-03-16 13:26:13,758 | INFO | uvicorn.access | 127.0.0.1:54323 - "GET /api/v1/posts HTTP/1.1" 200
+2026-03-16 13:27:13,725 | INFO | app.request | Request started method=POST path=/api/v1/posts client=127.0.0.1
+2026-03-16 13:27:13,938 | ERROR | app.db | Database session failed
+Traceback (most recent call last):
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\app\routers\posts.py", line 70, in create_post
+    storage_path, image_url = await upload_image_to_supabase(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\app\storage.py", line 74, in upload_image_to_supabase
+    raise StorageConfigError(
+app.storage.StorageConfigError: Supabase Storage is not configured. Set SUPABASE_PROJECT_URL and SUPABASE_SERVICE_ROLE_KEY.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\app\db.py", line 19, in get_db
+    yield db
+  File "C:\Users\there\AppData\Local\Programs\Python\Python312\Lib\site-packages\fastapi\concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "C:\Users\there\AppData\Local\Programs\Python\Python312\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\there\AppData\Local\Programs\Python\Python312\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\app\routers\posts.py", line 77, in create_post
+    raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(exc)) from exc
+fastapi.exceptions.HTTPException: 500: Supabase Storage is not configured. Set SUPABASE_PROJECT_URL and SUPABASE_SERVICE_ROLE_KEY.
+2026-03-16 13:27:14,044 | INFO | app.request | Request completed method=POST path=/api/v1/posts status=500 duration_ms=318.85
+2026-03-16 13:27:14,045 | INFO | uvicorn.access | 127.0.0.1:57632 - "POST /api/v1/posts HTTP/1.1" 500
+2026-03-16 13:30:49,863 | INFO | uvicorn.error | Shutting down
+2026-03-16 13:30:49,969 | INFO | uvicorn.error | Waiting for application shutdown.
+2026-03-16 13:30:49,970 | INFO | app | Stopping application
+2026-03-16 13:30:49,971 | INFO | uvicorn.error | Application shutdown complete.
+2026-03-16 13:30:49,971 | INFO | uvicorn.error | Finished server process [29968]
+2026-03-18 13:08:26,525 | INFO | app | Logging configured level=INFO file=C:\Disk D\AI dump\instagram_caption_generatorv2\backend\logs\app.log
+2026-03-18 13:08:26,529 | INFO | uvicorn.error | Started server process [14628]
+2026-03-18 13:08:26,530 | INFO | uvicorn.error | Waiting for application startup.
+2026-03-18 13:08:26,531 | INFO | app | Starting application
+2026-03-18 13:08:28,121 | INFO | app | Database tables ensured
+2026-03-18 13:08:28,121 | INFO | uvicorn.error | Application startup complete.
+2026-03-18 13:08:45,432 | INFO | app.request | Request started method=OPTIONS path=/api/v1/auth/login client=127.0.0.1
+2026-03-18 13:08:45,433 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/auth/login status=200 duration_ms=1.00
+2026-03-18 13:08:45,434 | INFO | uvicorn.access | 127.0.0.1:59953 - "OPTIONS /api/v1/auth/login HTTP/1.1" 200
+2026-03-18 13:08:45,436 | INFO | app.request | Request started method=POST path=/api/v1/auth/login client=127.0.0.1
+2026-03-18 13:08:45,451 | INFO | app.routers.auth | Login attempt email=rishav@gmail.com
+2026-03-18 13:08:45,967 | INFO | app.routers.auth | Login successful user_id=1 email=rishav@gmail.com
+2026-03-18 13:08:46,051 | INFO | app.request | Request completed method=POST path=/api/v1/auth/login status=200 duration_ms=615.56
+2026-03-18 13:08:46,052 | INFO | uvicorn.access | 127.0.0.1:59953 - "POST /api/v1/auth/login HTTP/1.1" 200
+2026-03-18 13:08:46,411 | INFO | app.request | Request started method=OPTIONS path=/api/v1/auth/me client=127.0.0.1
+2026-03-18 13:08:46,415 | INFO | app.request | Request started method=OPTIONS path=/api/v1/posts client=127.0.0.1
+2026-03-18 13:08:46,415 | INFO | app.request | Request started method=OPTIONS path=/api/v1/auth/me client=127.0.0.1
+2026-03-18 13:08:46,416 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/auth/me status=200 duration_ms=3.37
+2026-03-18 13:08:46,416 | INFO | uvicorn.access | 127.0.0.1:59953 - "OPTIONS /api/v1/auth/me HTTP/1.1" 200
+2026-03-18 13:08:46,417 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/posts status=200 duration_ms=2.27
+2026-03-18 13:08:46,417 | INFO | uvicorn.access | 127.0.0.1:56153 - "OPTIONS /api/v1/posts HTTP/1.1" 200
+2026-03-18 13:08:46,417 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/auth/me status=200 duration_ms=2.52
+2026-03-18 13:08:46,419 | INFO | uvicorn.access | 127.0.0.1:59941 - "OPTIONS /api/v1/auth/me HTTP/1.1" 200
+2026-03-18 13:08:46,420 | INFO | app.request | Request started method=OPTIONS path=/api/v1/posts client=127.0.0.1
+2026-03-18 13:08:46,420 | INFO | app.request | Request started method=GET path=/api/v1/auth/me client=127.0.0.1
+2026-03-18 13:08:46,421 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/posts status=200 duration_ms=1.04
+2026-03-18 13:08:46,421 | INFO | uvicorn.access | 127.0.0.1:59953 - "OPTIONS /api/v1/posts HTTP/1.1" 200
+2026-03-18 13:08:46,422 | INFO | app.request | Request started method=GET path=/api/v1/posts client=127.0.0.1
+2026-03-18 13:08:46,709 | INFO | app.request | Request completed method=GET path=/api/v1/auth/me status=200 duration_ms=288.83
+2026-03-18 13:08:46,709 | INFO | uvicorn.access | 127.0.0.1:56153 - "GET /api/v1/auth/me HTTP/1.1" 200
+2026-03-18 13:08:46,712 | INFO | app.request | Request started method=GET path=/api/v1/auth/me client=127.0.0.1
+2026-03-18 13:08:47,000 | INFO | app.request | Request completed method=GET path=/api/v1/auth/me status=200 duration_ms=286.94
+2026-03-18 13:08:47,001 | INFO | uvicorn.access | 127.0.0.1:56153 - "GET /api/v1/auth/me HTTP/1.1" 200
+2026-03-18 13:08:47,263 | INFO | app.request | Request completed method=GET path=/api/v1/posts status=200 duration_ms=840.85
+2026-03-18 13:08:47,264 | INFO | uvicorn.access | 127.0.0.1:59941 - "GET /api/v1/posts HTTP/1.1" 200
+2026-03-18 13:08:47,271 | INFO | app.request | Request started method=GET path=/api/v1/posts client=127.0.0.1
+2026-03-18 13:08:47,641 | INFO | app.request | Request completed method=GET path=/api/v1/posts status=200 duration_ms=368.95
+2026-03-18 13:08:47,641 | INFO | uvicorn.access | 127.0.0.1:59941 - "GET /api/v1/posts HTTP/1.1" 200
+2026-03-18 13:09:27,241 | INFO | app.request | Request started method=POST path=/api/v1/posts client=127.0.0.1
+2026-03-18 13:09:28,644 | ERROR | app.storage | Supabase upload failed status=400 body={"statusCode":"403","error":"Unauthorized","message":"Invalid Compact JWS"}
+2026-03-18 13:09:28,646 | ERROR | app.db | Database session failed
+Traceback (most recent call last):
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\app\routers\posts.py", line 70, in create_post
+    storage_path, image_url = await upload_image_to_supabase(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\app\storage.py", line 104, in upload_image_to_supabase
+    raise StorageUploadError("Could not upload image to Supabase Storage.")
+app.storage.StorageUploadError: Could not upload image to Supabase Storage.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\app\db.py", line 19, in get_db
+    yield db
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\.venv\Lib\site-packages\fastapi\concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\app\routers\posts.py", line 79, in create_post
+    raise HTTPException(status_code=status.HTTP_502_BAD_GATEWAY, detail=str(exc)) from exc
+fastapi.exceptions.HTTPException: 502: Could not upload image to Supabase Storage.
+2026-03-18 13:09:28,742 | INFO | app.request | Request completed method=POST path=/api/v1/posts status=502 duration_ms=1500.47
+2026-03-18 13:09:28,743 | INFO | uvicorn.access | 127.0.0.1:57990 - "POST /api/v1/posts HTTP/1.1" 502
+2026-03-18 13:11:41,761 | INFO | uvicorn.error | Shutting down
+2026-03-18 13:11:41,886 | INFO | uvicorn.error | Waiting for application shutdown.
+2026-03-18 13:11:41,887 | INFO | app | Stopping application
+2026-03-18 13:11:41,887 | INFO | uvicorn.error | Application shutdown complete.
+2026-03-18 13:11:41,894 | INFO | uvicorn.error | Finished server process [14628]
+2026-03-18 13:11:46,193 | INFO | app | Logging configured level=INFO file=C:\Disk D\AI dump\instagram_caption_generatorv2\backend\logs\app.log
+2026-03-18 13:11:46,198 | INFO | uvicorn.error | Started server process [17544]
+2026-03-18 13:11:46,199 | INFO | uvicorn.error | Waiting for application startup.
+2026-03-18 13:11:46,199 | INFO | app | Starting application
+2026-03-18 13:11:47,633 | INFO | app | Database tables ensured
+2026-03-18 13:11:47,634 | INFO | uvicorn.error | Application startup complete.
+2026-03-18 13:11:58,632 | INFO | app.request | Request started method=POST path=/api/v1/auth/login client=127.0.0.1
+2026-03-18 13:11:58,643 | INFO | app.routers.auth | Login attempt email=rishav@gmail.com
+2026-03-18 13:11:59,145 | INFO | app.routers.auth | Login successful user_id=1 email=rishav@gmail.com
+2026-03-18 13:11:59,217 | INFO | app.request | Request completed method=POST path=/api/v1/auth/login status=200 duration_ms=585.10
+2026-03-18 13:11:59,217 | INFO | uvicorn.access | 127.0.0.1:54479 - "POST /api/v1/auth/login HTTP/1.1" 200
+2026-03-18 13:11:59,543 | INFO | app.request | Request started method=GET path=/api/v1/auth/me client=127.0.0.1
+2026-03-18 13:11:59,546 | INFO | app.request | Request started method=GET path=/api/v1/posts client=127.0.0.1
+2026-03-18 13:11:59,903 | INFO | app.request | Request completed method=GET path=/api/v1/posts status=200 duration_ms=357.08
+2026-03-18 13:11:59,903 | INFO | uvicorn.access | 127.0.0.1:50598 - "GET /api/v1/posts HTTP/1.1" 200
+2026-03-18 13:11:59,908 | INFO | app.request | Request started method=GET path=/api/v1/posts client=127.0.0.1
+2026-03-18 13:12:00,264 | INFO | app.request | Request completed method=GET path=/api/v1/posts status=200 duration_ms=356.76
+2026-03-18 13:12:00,265 | INFO | uvicorn.access | 127.0.0.1:50598 - "GET /api/v1/posts HTTP/1.1" 200
+2026-03-18 13:12:00,346 | INFO | app.request | Request completed method=GET path=/api/v1/auth/me status=200 duration_ms=802.99
+2026-03-18 13:12:00,347 | INFO | uvicorn.access | 127.0.0.1:54479 - "GET /api/v1/auth/me HTTP/1.1" 200
+2026-03-18 13:12:00,353 | INFO | app.request | Request started method=GET path=/api/v1/auth/me client=127.0.0.1
+2026-03-18 13:12:00,631 | INFO | app.request | Request completed method=GET path=/api/v1/auth/me status=200 duration_ms=279.16
+2026-03-18 13:12:00,632 | INFO | uvicorn.access | 127.0.0.1:54479 - "GET /api/v1/auth/me HTTP/1.1" 200
+2026-03-18 13:12:10,987 | INFO | app.request | Request started method=POST path=/api/v1/posts client=127.0.0.1
+2026-03-18 13:12:12,129 | ERROR | app.storage | Supabase upload failed status=400 body={"statusCode":"403","error":"Unauthorized","message":"Invalid Compact JWS"}
+2026-03-18 13:12:12,129 | ERROR | app.db | Database session failed
+Traceback (most recent call last):
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\app\routers\posts.py", line 70, in create_post
+    storage_path, image_url = await upload_image_to_supabase(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\app\storage.py", line 104, in upload_image_to_supabase
+    raise StorageUploadError("Could not upload image to Supabase Storage.")
+app.storage.StorageUploadError: Could not upload image to Supabase Storage.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\app\db.py", line 19, in get_db
+    yield db
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\.venv\Lib\site-packages\fastapi\concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\app\routers\posts.py", line 79, in create_post
+    raise HTTPException(status_code=status.HTTP_502_BAD_GATEWAY, detail=str(exc)) from exc
+fastapi.exceptions.HTTPException: 502: Could not upload image to Supabase Storage.
+2026-03-18 13:12:12,208 | INFO | app.request | Request completed method=POST path=/api/v1/posts status=502 duration_ms=1220.90
+2026-03-18 13:12:12,208 | INFO | uvicorn.access | 127.0.0.1:61738 - "POST /api/v1/posts HTTP/1.1" 502
+2026-03-18 13:15:16,326 | INFO | uvicorn.error | Shutting down
+2026-03-18 13:15:16,436 | INFO | uvicorn.error | Waiting for application shutdown.
+2026-03-18 13:15:16,438 | INFO | app | Stopping application
+2026-03-18 13:15:16,439 | INFO | uvicorn.error | Application shutdown complete.
+2026-03-18 13:15:16,439 | INFO | uvicorn.error | Finished server process [17544]
+2026-03-18 13:15:19,829 | INFO | app | Logging configured level=INFO file=C:\Disk D\AI dump\instagram_caption_generatorv2\backend\logs\app.log
+2026-03-18 13:15:19,833 | INFO | uvicorn.error | Started server process [17600]
+2026-03-18 13:15:19,833 | INFO | uvicorn.error | Waiting for application startup.
+2026-03-18 13:15:19,833 | INFO | app | Starting application
+2026-03-18 13:15:21,313 | INFO | app | Database tables ensured
+2026-03-18 13:15:21,315 | INFO | uvicorn.error | Application startup complete.
+2026-03-18 13:15:36,138 | INFO | app.request | Request started method=POST path=/api/v1/auth/login client=127.0.0.1
+2026-03-18 13:15:36,149 | INFO | app.routers.auth | Login attempt email=rishav@gmail.com
+2026-03-18 13:15:36,628 | INFO | app.routers.auth | Login successful user_id=1 email=rishav@gmail.com
+2026-03-18 13:15:36,704 | INFO | app.request | Request completed method=POST path=/api/v1/auth/login status=200 duration_ms=565.30
+2026-03-18 13:15:36,705 | INFO | uvicorn.access | 127.0.0.1:57026 - "POST /api/v1/auth/login HTTP/1.1" 200
+2026-03-18 13:15:36,812 | INFO | app.request | Request started method=GET path=/api/v1/auth/me client=127.0.0.1
+2026-03-18 13:15:36,816 | INFO | app.request | Request started method=GET path=/api/v1/posts client=127.0.0.1
+2026-03-18 13:15:37,103 | INFO | app.request | Request completed method=GET path=/api/v1/auth/me status=200 duration_ms=291.06
+2026-03-18 13:15:37,104 | INFO | uvicorn.access | 127.0.0.1:57026 - "GET /api/v1/auth/me HTTP/1.1" 200
+2026-03-18 13:15:37,108 | INFO | app.request | Request started method=GET path=/api/v1/auth/me client=127.0.0.1
+2026-03-18 13:15:37,410 | INFO | app.request | Request completed method=GET path=/api/v1/auth/me status=200 duration_ms=301.58
+2026-03-18 13:15:37,412 | INFO | uvicorn.access | 127.0.0.1:57026 - "GET /api/v1/auth/me HTTP/1.1" 200
+2026-03-18 13:15:37,629 | INFO | app.request | Request completed method=GET path=/api/v1/posts status=200 duration_ms=812.07
+2026-03-18 13:15:37,630 | INFO | uvicorn.access | 127.0.0.1:61172 - "GET /api/v1/posts HTTP/1.1" 200
+2026-03-18 13:15:37,633 | INFO | app.request | Request started method=GET path=/api/v1/posts client=127.0.0.1
+2026-03-18 13:15:38,015 | INFO | app.request | Request completed method=GET path=/api/v1/posts status=200 duration_ms=381.82
+2026-03-18 13:15:38,016 | INFO | uvicorn.access | 127.0.0.1:61172 - "GET /api/v1/posts HTTP/1.1" 200
+2026-03-18 13:15:51,034 | INFO | app.request | Request started method=POST path=/api/v1/posts client=127.0.0.1
+2026-03-18 13:15:52,879 | INFO | app.request | Request completed method=POST path=/api/v1/posts status=201 duration_ms=1845.88
+2026-03-18 13:15:52,881 | INFO | uvicorn.access | 127.0.0.1:54917 - "POST /api/v1/posts HTTP/1.1" 201
+2026-03-18 13:16:01,404 | INFO | app.request | Request started method=POST path=/api/v1/auth/login client=127.0.0.1
+2026-03-18 13:16:01,407 | INFO | app.routers.auth | Login attempt email=rishav@gmail.com
+2026-03-18 13:16:01,844 | INFO | app.routers.auth | Login successful user_id=1 email=rishav@gmail.com
+2026-03-18 13:16:01,912 | INFO | app.request | Request completed method=POST path=/api/v1/auth/login status=200 duration_ms=508.32
+2026-03-18 13:16:01,912 | INFO | uvicorn.access | 127.0.0.1:64603 - "POST /api/v1/auth/login HTTP/1.1" 200
+2026-03-18 13:16:01,928 | INFO | app.request | Request started method=GET path=/api/v1/auth/me client=127.0.0.1
+2026-03-18 13:16:02,226 | INFO | app.request | Request completed method=GET path=/api/v1/auth/me status=200 duration_ms=298.33
+2026-03-18 13:16:02,228 | INFO | uvicorn.access | 127.0.0.1:64603 - "GET /api/v1/auth/me HTTP/1.1" 200
+2026-03-18 13:16:02,234 | INFO | app.request | Request started method=GET path=/api/v1/posts client=127.0.0.1
+2026-03-18 13:16:02,236 | INFO | app.request | Request started method=GET path=/api/v1/auth/me client=127.0.0.1
+2026-03-18 13:16:02,529 | INFO | app.request | Request completed method=GET path=/api/v1/auth/me status=200 duration_ms=292.85
+2026-03-18 13:16:02,530 | INFO | uvicorn.access | 127.0.0.1:64225 - "GET /api/v1/auth/me HTTP/1.1" 200
+2026-03-18 13:16:02,599 | INFO | app.request | Request completed method=GET path=/api/v1/posts status=200 duration_ms=365.27
+2026-03-18 13:16:02,601 | INFO | uvicorn.access | 127.0.0.1:64603 - "GET /api/v1/posts HTTP/1.1" 200
+2026-03-18 13:16:02,605 | INFO | app.request | Request started method=GET path=/api/v1/posts client=127.0.0.1
+2026-03-18 13:16:03,001 | INFO | app.request | Request completed method=GET path=/api/v1/posts status=200 duration_ms=395.97
+2026-03-18 13:16:03,002 | INFO | uvicorn.access | 127.0.0.1:64603 - "GET /api/v1/posts HTTP/1.1" 200

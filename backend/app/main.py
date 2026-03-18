@@ -10,7 +10,7 @@ from . import models  # noqa: F401
 from .config import settings
 from .db import Base, engine
 from .logging_config import configure_logging
-from .routers import auth
+from .routers import auth, posts
 
 
 logger = configure_logging()
@@ -67,3 +67,4 @@ def health() -> dict[str, str]:
 
 
 app.include_router(auth.router, prefix="/api/v1")
+app.include_router(posts.router, prefix="/api/v1")
