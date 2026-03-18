@@ -22,8 +22,27 @@ def _normalize_database_url(raw_url: str) -> str:
     return url
 
 
+def _derive_supabase_project_url(raw_url: str | None) -> str | None:
+    if not raw_url:
+        return None
+
+    parsed = urlparse(_normalize_database_url(raw_url))
+    host = parsed.hostname
+    if not host or not host.endswith(".supabase.co"):
+        return None
+
+    if host.startswith("db."):
+        host = host[len("db.") :]
+
+    return f"https://{host}"
+
+
 class Settings(BaseSettings):
     SUPABASE_DB_URL: str | None = None
+    SUPABASE_PROJECT_URL: str | None = None
+    SUPABASE_SERVICE_ROLE_KEY: str | None = None
+    SUPABASE_STORAGE_BUCKET: str = "posts"
+    SUPABASE_MAX_UPLOAD_MB: int = 10
     DATABASE_URL: str = "postgresql+psycopg://postgres:postgres@localhost:5432/creator_growth"
     JWT_SECRET_KEY: str = "change_me_in_production"
     JWT_ACCESS_TOKEN_EXPIRE_MINUTES: int = 60
@@ -46,6 +65,13 @@ class Settings(BaseSettings):
     def database_url(self) -> str:
         # Prefer Supabase when provided, but keep DATABASE_URL for compatibility.
         return _normalize_database_url(self.SUPABASE_DB_URL or self.DATABASE_URL)
+
+    @property
+    def supabase_project_url(self) -> str | None:
+        if self.SUPABASE_PROJECT_URL:
+            return self.SUPABASE_PROJECT_URL.strip().rstrip("/")
+
+        return _derive_supabase_project_url(self.SUPABASE_DB_URL)
 
     @property
     def log_level(self) -> str:

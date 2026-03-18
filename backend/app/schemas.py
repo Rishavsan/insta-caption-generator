@@ -21,6 +21,17 @@ class UserPublic(BaseModel):
     created_at: datetime
 
 
+class PostPublic(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+
+    id: int
+    user_id: int
+    image_url: str
+    caption: str | None
+    music_info: str | None
+    created_at: datetime
+
+
 class AuthResponse(BaseModel):
     access_token: str
     token_type: str = "bearer"
