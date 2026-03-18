@@ -272,3 +272,395 @@ fastapi.exceptions.HTTPException: 502: Could not upload image to Supabase Storag
 2026-03-18 13:16:02,605 | INFO | app.request | Request started method=GET path=/api/v1/posts client=127.0.0.1
 2026-03-18 13:16:03,001 | INFO | app.request | Request completed method=GET path=/api/v1/posts status=200 duration_ms=395.97
 2026-03-18 13:16:03,002 | INFO | uvicorn.access | 127.0.0.1:64603 - "GET /api/v1/posts HTTP/1.1" 200
+2026-03-18 13:18:11,306 | INFO | uvicorn.error | Shutting down
+2026-03-18 13:18:11,409 | INFO | uvicorn.error | Waiting for application shutdown.
+2026-03-18 13:18:11,409 | INFO | app | Stopping application
+2026-03-18 13:18:11,410 | INFO | uvicorn.error | Application shutdown complete.
+2026-03-18 13:18:11,410 | INFO | uvicorn.error | Finished server process [17600]
+2026-03-18 14:03:43,840 | INFO | app | Logging configured level=INFO file=C:\Disk D\AI dump\instagram_caption_generatorv2\backend\logs\app.log
+2026-03-18 14:03:43,845 | INFO | uvicorn.error | Started server process [31664]
+2026-03-18 14:03:43,845 | INFO | uvicorn.error | Waiting for application startup.
+2026-03-18 14:03:43,846 | INFO | app | Starting application
+2026-03-18 14:03:45,863 | INFO | app.db | Added posts.music_metadata column
+2026-03-18 14:03:45,930 | INFO | app | Database tables ensured
+2026-03-18 14:03:45,930 | INFO | uvicorn.error | Application startup complete.
+2026-03-18 14:03:55,145 | INFO | app.request | Request started method=OPTIONS path=/api/v1/auth/login client=127.0.0.1
+2026-03-18 14:03:55,146 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/auth/login status=200 duration_ms=0.79
+2026-03-18 14:03:55,146 | INFO | uvicorn.access | 127.0.0.1:62458 - "OPTIONS /api/v1/auth/login HTTP/1.1" 200
+2026-03-18 14:03:55,148 | INFO | app.request | Request started method=POST path=/api/v1/auth/login client=127.0.0.1
+2026-03-18 14:03:55,157 | INFO | app.routers.auth | Login attempt email=rishav@gmail.com
+2026-03-18 14:03:55,629 | INFO | app.routers.auth | Login successful user_id=1 email=rishav@gmail.com
+2026-03-18 14:03:55,695 | INFO | app.request | Request completed method=POST path=/api/v1/auth/login status=200 duration_ms=551.42
+2026-03-18 14:03:55,701 | INFO | uvicorn.access | 127.0.0.1:62458 - "POST /api/v1/auth/login HTTP/1.1" 200
+2026-03-18 14:03:56,159 | INFO | app.request | Request started method=OPTIONS path=/api/v1/auth/me client=127.0.0.1
+2026-03-18 14:03:56,160 | INFO | app.request | Request started method=OPTIONS path=/api/v1/posts client=127.0.0.1
+2026-03-18 14:03:56,161 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/auth/me status=200 duration_ms=1.42
+2026-03-18 14:03:56,161 | INFO | uvicorn.access | 127.0.0.1:62458 - "OPTIONS /api/v1/auth/me HTTP/1.1" 200
+2026-03-18 14:03:56,163 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/posts status=200 duration_ms=2.02
+2026-03-18 14:03:56,163 | INFO | uvicorn.access | 127.0.0.1:58502 - "OPTIONS /api/v1/posts HTTP/1.1" 200
+2026-03-18 14:03:56,164 | INFO | app.request | Request started method=OPTIONS path=/api/v1/posts client=127.0.0.1
+2026-03-18 14:03:56,165 | INFO | app.request | Request started method=GET path=/api/v1/auth/me client=127.0.0.1
+2026-03-18 14:03:56,165 | INFO | app.request | Request started method=GET path=/api/v1/posts client=127.0.0.1
+2026-03-18 14:03:56,165 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/posts status=200 duration_ms=3.36
+2026-03-18 14:03:56,165 | INFO | uvicorn.access | 127.0.0.1:62458 - "OPTIONS /api/v1/posts HTTP/1.1" 200
+2026-03-18 14:03:56,445 | INFO | app.request | Request completed method=GET path=/api/v1/auth/me status=200 duration_ms=280.15
+2026-03-18 14:03:56,445 | INFO | uvicorn.access | 127.0.0.1:62380 - "GET /api/v1/auth/me HTTP/1.1" 200
+2026-03-18 14:03:56,445 | INFO | app.request | Request started method=GET path=/api/v1/auth/me client=127.0.0.1
+2026-03-18 14:03:56,726 | INFO | app.request | Request completed method=GET path=/api/v1/auth/me status=200 duration_ms=277.06
+2026-03-18 14:03:56,726 | INFO | uvicorn.access | 127.0.0.1:62380 - "GET /api/v1/auth/me HTTP/1.1" 200
+2026-03-18 14:03:56,991 | INFO | app.request | Request completed method=GET path=/api/v1/posts status=200 duration_ms=826.19
+2026-03-18 14:03:56,991 | INFO | uvicorn.access | 127.0.0.1:58502 - "GET /api/v1/posts HTTP/1.1" 200
+2026-03-18 14:03:56,995 | INFO | app.request | Request started method=GET path=/api/v1/posts client=127.0.0.1
+2026-03-18 14:03:57,338 | INFO | app.request | Request completed method=GET path=/api/v1/posts status=200 duration_ms=346.34
+2026-03-18 14:03:57,345 | INFO | uvicorn.access | 127.0.0.1:58502 - "GET /api/v1/posts HTTP/1.1" 200
+2026-03-18 14:04:03,885 | INFO | app.request | Request started method=OPTIONS path=/api/v1/music/search client=127.0.0.1
+2026-03-18 14:04:03,885 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/music/search status=200 duration_ms=0.79
+2026-03-18 14:04:03,885 | INFO | uvicorn.access | 127.0.0.1:62699 - "OPTIONS /api/v1/music/search?q=hi&limit=8 HTTP/1.1" 200
+2026-03-18 14:04:03,888 | INFO | app.request | Request started method=GET path=/api/v1/music/search client=127.0.0.1
+2026-03-18 14:04:05,045 | ERROR | app.spotify | Spotify search failed status=403 body={"error": {"status": 403, "message": "Insufficient client scope" } }
+2026-03-18 14:04:05,047 | ERROR | app.db | Database session failed
+Traceback (most recent call last):
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\app\spotify_service.py", line 157, in _search_tracks_with_token
+    with urllib.request.urlopen(request, timeout=20) as response:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\there\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\there\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\there\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\there\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\there\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Users\there\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\app\routers\music.py", line 18, in search_music
+    results = search_spotify_tracks(query=q, limit=limit)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\app\spotify_service.py", line 202, in search_spotify_tracks
+    return _search_tracks_with_token(token=token, query=cleaned_query, limit=safe_limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\app\spotify_service.py", line 166, in _search_tracks_with_token
+    raise SpotifyApiError("Spotify search failed.") from exc
+app.spotify_service.SpotifyApiError: Spotify search failed.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\app\db.py", line 33, in get_db
+    yield db
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\.venv\Lib\site-packages\fastapi\concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\.venv\Lib\site-packages\fastapi\routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\.venv\Lib\site-packages\starlette\concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\.venv\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\app\routers\music.py", line 22, in search_music
+    raise HTTPException(status_code=status.HTTP_502_BAD_GATEWAY, detail=str(exc)) from exc
+fastapi.exceptions.HTTPException: 502: Spotify search failed.
+2026-03-18 14:04:05,249 | INFO | app.request | Request completed method=GET path=/api/v1/music/search status=502 duration_ms=1365.13
+2026-03-18 14:04:05,255 | INFO | uvicorn.access | 127.0.0.1:62699 - "GET /api/v1/music/search?q=hi&limit=8 HTTP/1.1" 502
+2026-03-18 14:04:07,126 | INFO | app.request | Request started method=OPTIONS path=/api/v1/music/search client=127.0.0.1
+2026-03-18 14:04:07,126 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/music/search status=200 duration_ms=1.43
+2026-03-18 14:04:07,126 | INFO | uvicorn.access | 127.0.0.1:62699 - "OPTIONS /api/v1/music/search?q=a&limit=8 HTTP/1.1" 200
+2026-03-18 14:04:07,126 | INFO | app.request | Request started method=GET path=/api/v1/music/search client=127.0.0.1
+2026-03-18 14:04:07,615 | ERROR | app.spotify | Spotify search failed status=403 body={"error": {"status": 403, "message": "Insufficient client scope" } }
+2026-03-18 14:04:07,615 | ERROR | app.db | Database session failed
+Traceback (most recent call last):
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\app\spotify_service.py", line 157, in _search_tracks_with_token
+    with urllib.request.urlopen(request, timeout=20) as response:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\there\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\there\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\there\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\there\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\there\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Users\there\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\app\routers\music.py", line 18, in search_music
+    results = search_spotify_tracks(query=q, limit=limit)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\app\spotify_service.py", line 202, in search_spotify_tracks
+    return _search_tracks_with_token(token=token, query=cleaned_query, limit=safe_limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\app\spotify_service.py", line 166, in _search_tracks_with_token
+    raise SpotifyApiError("Spotify search failed.") from exc
+app.spotify_service.SpotifyApiError: Spotify search failed.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\app\db.py", line 33, in get_db
+    yield db
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\.venv\Lib\site-packages\fastapi\concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\.venv\Lib\site-packages\fastapi\routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\.venv\Lib\site-packages\starlette\concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\.venv\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\app\routers\music.py", line 22, in search_music
+    raise HTTPException(status_code=status.HTTP_502_BAD_GATEWAY, detail=str(exc)) from exc
+fastapi.exceptions.HTTPException: 502: Spotify search failed.
+2026-03-18 14:04:07,685 | INFO | app.request | Request completed method=GET path=/api/v1/music/search status=502 duration_ms=555.10
+2026-03-18 14:04:07,690 | INFO | uvicorn.access | 127.0.0.1:62699 - "GET /api/v1/music/search?q=a&limit=8 HTTP/1.1" 502
+2026-03-18 14:08:42,935 | INFO | uvicorn.error | Shutting down
+2026-03-18 14:08:43,047 | INFO | uvicorn.error | Waiting for application shutdown.
+2026-03-18 14:08:43,050 | INFO | app | Stopping application
+2026-03-18 14:08:43,051 | INFO | uvicorn.error | Application shutdown complete.
+2026-03-18 14:08:43,052 | INFO | uvicorn.error | Finished server process [31664]
+2026-03-18 14:08:44,181 | INFO | app | Logging configured level=INFO file=C:\Disk D\AI dump\instagram_caption_generatorv2\backend\logs\app.log
+2026-03-18 14:08:44,188 | INFO | uvicorn.error | Started server process [15884]
+2026-03-18 14:08:44,188 | INFO | uvicorn.error | Waiting for application startup.
+2026-03-18 14:08:44,188 | INFO | app | Starting application
+2026-03-18 14:08:46,234 | INFO | app | Database tables ensured
+2026-03-18 14:08:46,234 | INFO | uvicorn.error | Application startup complete.
+2026-03-18 14:08:46,314 | ERROR | uvicorn.error | Traceback (most recent call last):
+  File "C:\Users\there\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\there\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\there\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\there\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\.venv\Lib\site-packages\starlette\routing.py", line 699, in lifespan
+    await receive()
+  File "C:\Disk D\AI dump\instagram_caption_generatorv2\backend\.venv\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\there\AppData\Local\Programs\Python\Python312\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+2026-03-18 14:08:47,158 | INFO | app | Logging configured level=INFO file=C:\Disk D\AI dump\instagram_caption_generatorv2\backend\logs\app.log
+2026-03-18 14:08:47,163 | INFO | uvicorn.error | Started server process [20648]
+2026-03-18 14:08:47,164 | INFO | uvicorn.error | Waiting for application startup.
+2026-03-18 14:08:47,164 | INFO | app | Starting application
+2026-03-18 14:08:49,126 | INFO | app | Database tables ensured
+2026-03-18 14:08:49,128 | INFO | uvicorn.error | Application startup complete.
+2026-03-18 14:20:41,864 | INFO | uvicorn.error | Shutting down
+2026-03-18 14:20:41,980 | INFO | uvicorn.error | Waiting for application shutdown.
+2026-03-18 14:20:41,981 | INFO | app | Stopping application
+2026-03-18 14:20:41,981 | INFO | uvicorn.error | Application shutdown complete.
+2026-03-18 14:20:41,981 | INFO | uvicorn.error | Finished server process [20648]
+2026-03-18 14:20:43,021 | INFO | app | Logging configured level=INFO file=C:\Disk D\AI dump\instagram_caption_generatorv2\backend\logs\app.log
+2026-03-18 14:20:43,032 | INFO | uvicorn.error | Started server process [32492]
+2026-03-18 14:20:43,032 | INFO | uvicorn.error | Waiting for application startup.
+2026-03-18 14:20:43,032 | INFO | app | Starting application
+2026-03-18 14:20:45,002 | INFO | app | Database tables ensured
+2026-03-18 14:20:45,002 | INFO | uvicorn.error | Application startup complete.
+2026-03-18 14:20:46,332 | INFO | uvicorn.error | Shutting down
+2026-03-18 14:20:46,447 | INFO | uvicorn.error | Waiting for application shutdown.
+2026-03-18 14:20:46,447 | INFO | app | Stopping application
+2026-03-18 14:20:46,447 | INFO | uvicorn.error | Application shutdown complete.
+2026-03-18 14:20:46,447 | INFO | uvicorn.error | Finished server process [32492]
+2026-03-18 14:20:48,926 | INFO | app | Logging configured level=INFO file=C:\Disk D\AI dump\instagram_caption_generatorv2\backend\logs\app.log
+2026-03-18 14:20:48,931 | INFO | uvicorn.error | Started server process [15796]
+2026-03-18 14:20:48,931 | INFO | uvicorn.error | Waiting for application startup.
+2026-03-18 14:20:48,932 | INFO | app | Starting application
+2026-03-18 14:20:50,745 | INFO | app | Database tables ensured
+2026-03-18 14:20:50,745 | INFO | uvicorn.error | Application startup complete.
+2026-03-18 14:20:50,836 | INFO | app.request | Request started method=OPTIONS path=/api/v1/auth/me client=127.0.0.1
+2026-03-18 14:20:50,836 | INFO | app.request | Request started method=OPTIONS path=/api/v1/posts client=127.0.0.1
+2026-03-18 14:20:50,836 | INFO | app.request | Request started method=OPTIONS path=/api/v1/auth/me client=127.0.0.1
+2026-03-18 14:20:50,836 | INFO | app.request | Request started method=OPTIONS path=/api/v1/posts client=127.0.0.1
+2026-03-18 14:20:50,836 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/auth/me status=200 duration_ms=2.03
+2026-03-18 14:20:50,836 | INFO | uvicorn.access | 127.0.0.1:52709 - "OPTIONS /api/v1/auth/me HTTP/1.1" 200
+2026-03-18 14:20:50,836 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/posts status=200 duration_ms=2.06
+2026-03-18 14:20:50,836 | INFO | uvicorn.access | 127.0.0.1:61821 - "OPTIONS /api/v1/posts HTTP/1.1" 200
+2026-03-18 14:20:50,836 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/auth/me status=200 duration_ms=2.50
+2026-03-18 14:20:50,836 | INFO | uvicorn.access | 127.0.0.1:53888 - "OPTIONS /api/v1/auth/me HTTP/1.1" 200
+2026-03-18 14:20:50,841 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/posts status=200 duration_ms=2.95
+2026-03-18 14:20:50,841 | INFO | uvicorn.access | 127.0.0.1:56263 - "OPTIONS /api/v1/posts HTTP/1.1" 200
+2026-03-18 14:20:50,841 | INFO | app.request | Request started method=GET path=/api/v1/auth/me client=127.0.0.1
+2026-03-18 14:20:50,841 | INFO | app.request | Request started method=GET path=/api/v1/posts client=127.0.0.1
+2026-03-18 14:20:51,187 | INFO | app.request | Request completed method=GET path=/api/v1/posts status=200 duration_ms=344.15
+2026-03-18 14:20:51,187 | INFO | uvicorn.access | 127.0.0.1:61821 - "GET /api/v1/posts HTTP/1.1" 200
+2026-03-18 14:20:51,189 | INFO | app.request | Request started method=GET path=/api/v1/posts client=127.0.0.1
+2026-03-18 14:20:51,516 | INFO | app.request | Request completed method=GET path=/api/v1/posts status=200 duration_ms=330.58
+2026-03-18 14:20:51,521 | INFO | uvicorn.access | 127.0.0.1:61821 - "GET /api/v1/posts HTTP/1.1" 200
+2026-03-18 14:20:51,608 | INFO | app.request | Request completed method=GET path=/api/v1/auth/me status=200 duration_ms=766.44
+2026-03-18 14:20:51,609 | INFO | uvicorn.access | 127.0.0.1:52709 - "GET /api/v1/auth/me HTTP/1.1" 200
+2026-03-18 14:20:51,611 | INFO | app.request | Request started method=GET path=/api/v1/auth/me client=127.0.0.1
+2026-03-18 14:20:51,877 | INFO | app.request | Request completed method=GET path=/api/v1/auth/me status=200 duration_ms=266.22
+2026-03-18 14:20:51,878 | INFO | uvicorn.access | 127.0.0.1:52709 - "GET /api/v1/auth/me HTTP/1.1" 200
+2026-03-18 14:20:55,805 | INFO | app.request | Request started method=OPTIONS path=/api/v1/music/search client=127.0.0.1
+2026-03-18 14:20:55,807 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/music/search status=200 duration_ms=1.69
+2026-03-18 14:20:55,808 | INFO | uvicorn.access | 127.0.0.1:52709 - "OPTIONS /api/v1/music/search?q=s&limit=8 HTTP/1.1" 200
+2026-03-18 14:20:55,811 | INFO | app.request | Request started method=GET path=/api/v1/music/search client=127.0.0.1
+2026-03-18 14:20:56,974 | INFO | app.request | Request completed method=GET path=/api/v1/music/search status=200 duration_ms=1164.23
+2026-03-18 14:20:56,974 | INFO | uvicorn.access | 127.0.0.1:52709 - "GET /api/v1/music/search?q=s&limit=8 HTTP/1.1" 200
+2026-03-18 14:20:59,241 | INFO | app.request | Request started method=OPTIONS path=/api/v1/music/search client=127.0.0.1
+2026-03-18 14:20:59,249 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/music/search status=200 duration_ms=1.52
+2026-03-18 14:20:59,249 | INFO | uvicorn.access | 127.0.0.1:52709 - "OPTIONS /api/v1/music/search?q=Sheesha+-+Aakhya+Mai+Aakh+Ghali+Jo+Bairan+-+Mitta+Ror%2C+Swara+Verma&limit=8 HTTP/1.1" 200
+2026-03-18 14:20:59,252 | INFO | app.request | Request started method=GET path=/api/v1/music/search client=127.0.0.1
+2026-03-18 14:21:00,291 | INFO | app.request | Request completed method=GET path=/api/v1/music/search status=200 duration_ms=1040.34
+2026-03-18 14:21:00,291 | INFO | uvicorn.access | 127.0.0.1:52709 - "GET /api/v1/music/search?q=Sheesha+-+Aakhya+Mai+Aakh+Ghali+Jo+Bairan+-+Mitta+Ror%2C+Swara+Verma&limit=8 HTTP/1.1" 200
+2026-03-18 14:21:09,610 | INFO | app.request | Request started method=OPTIONS path=/api/v1/music/search client=127.0.0.1
+2026-03-18 14:21:09,611 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/music/search status=200 duration_ms=1.41
+2026-03-18 14:21:09,611 | INFO | uvicorn.access | 127.0.0.1:57240 - "OPTIONS /api/v1/music/search?q=baw&limit=8 HTTP/1.1" 200
+2026-03-18 14:21:09,614 | INFO | app.request | Request started method=GET path=/api/v1/music/search client=127.0.0.1
+2026-03-18 14:21:10,075 | INFO | app.request | Request started method=OPTIONS path=/api/v1/music/search client=127.0.0.1
+2026-03-18 14:21:10,075 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/music/search status=200 duration_ms=1.57
+2026-03-18 14:21:10,075 | INFO | uvicorn.access | 127.0.0.1:59368 - "OPTIONS /api/v1/music/search?q=bawra&limit=8 HTTP/1.1" 200
+2026-03-18 14:21:10,083 | INFO | app.request | Request started method=GET path=/api/v1/music/search client=127.0.0.1
+2026-03-18 14:21:10,464 | INFO | app.request | Request completed method=GET path=/api/v1/music/search status=200 duration_ms=848.55
+2026-03-18 14:21:10,464 | INFO | uvicorn.access | 127.0.0.1:57240 - "GET /api/v1/music/search?q=baw&limit=8 HTTP/1.1" 200
+2026-03-18 14:21:10,873 | INFO | app.request | Request completed method=GET path=/api/v1/music/search status=200 duration_ms=789.18
+2026-03-18 14:21:10,874 | INFO | uvicorn.access | 127.0.0.1:59368 - "GET /api/v1/music/search?q=bawra&limit=8 HTTP/1.1" 200
+2026-03-18 14:21:17,425 | INFO | app.request | Request started method=OPTIONS path=/api/v1/music/search client=127.0.0.1
+2026-03-18 14:21:17,425 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/music/search status=200 duration_ms=1.78
+2026-03-18 14:21:17,425 | INFO | uvicorn.access | 127.0.0.1:54377 - "OPTIONS /api/v1/music/search?q=Bawra+-+NAALAYAK&limit=8 HTTP/1.1" 200
+2026-03-18 14:21:17,431 | INFO | app.request | Request started method=GET path=/api/v1/music/search client=127.0.0.1
+2026-03-18 14:21:18,341 | INFO | app.request | Request completed method=GET path=/api/v1/music/search status=200 duration_ms=911.89
+2026-03-18 14:21:18,341 | INFO | uvicorn.access | 127.0.0.1:54377 - "GET /api/v1/music/search?q=Bawra+-+NAALAYAK&limit=8 HTTP/1.1" 200
+2026-03-18 14:21:34,538 | INFO | app.request | Request started method=POST path=/api/v1/posts client=127.0.0.1
+2026-03-18 14:21:36,191 | INFO | app.request | Request completed method=POST path=/api/v1/posts status=201 duration_ms=1650.52
+2026-03-18 14:21:36,192 | INFO | uvicorn.access | 127.0.0.1:52734 - "POST /api/v1/posts HTTP/1.1" 201
+2026-03-18 15:52:02,126 | INFO | uvicorn.error | Shutting down
+2026-03-18 15:52:02,232 | INFO | uvicorn.error | Waiting for application shutdown.
+2026-03-18 15:52:02,236 | INFO | app | Stopping application
+2026-03-18 15:52:02,239 | INFO | uvicorn.error | Application shutdown complete.
+2026-03-18 15:52:02,240 | INFO | uvicorn.error | Finished server process [15796]
+2026-03-18 15:52:05,405 | INFO | app | Logging configured level=INFO file=C:\Disk D\AI dump\instagram_caption_generatorv2\backend\logs\app.log
+2026-03-18 15:52:05,412 | INFO | uvicorn.error | Started server process [23840]
+2026-03-18 15:52:05,412 | INFO | uvicorn.error | Waiting for application startup.
+2026-03-18 15:52:05,412 | INFO | app | Starting application
+2026-03-18 15:52:07,457 | INFO | app | Database tables ensured
+2026-03-18 15:52:07,457 | INFO | uvicorn.error | Application startup complete.
+2026-03-18 15:52:41,617 | INFO | app.request | Request started method=OPTIONS path=/api/v1/auth/login client=127.0.0.1
+2026-03-18 15:52:41,617 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/auth/login status=200 duration_ms=1.16
+2026-03-18 15:52:41,627 | INFO | uvicorn.access | 127.0.0.1:63489 - "OPTIONS /api/v1/auth/login HTTP/1.1" 200
+2026-03-18 15:52:41,627 | INFO | app.request | Request started method=POST path=/api/v1/auth/login client=127.0.0.1
+2026-03-18 15:52:41,641 | INFO | app.routers.auth | Login attempt email=rishav@gmail.com
+2026-03-18 15:52:42,127 | INFO | app.routers.auth | Login successful user_id=1 email=rishav@gmail.com
+2026-03-18 15:52:42,203 | INFO | app.request | Request completed method=POST path=/api/v1/auth/login status=200 duration_ms=574.26
+2026-03-18 15:52:42,203 | INFO | uvicorn.access | 127.0.0.1:63489 - "POST /api/v1/auth/login HTTP/1.1" 200
+2026-03-18 15:52:43,162 | INFO | app.request | Request started method=OPTIONS path=/api/v1/auth/me client=127.0.0.1
+2026-03-18 15:52:43,163 | INFO | app.request | Request started method=OPTIONS path=/api/v1/posts client=127.0.0.1
+2026-03-18 15:52:43,165 | INFO | app.request | Request started method=OPTIONS path=/api/v1/auth/me client=127.0.0.1
+2026-03-18 15:52:43,166 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/auth/me status=200 duration_ms=3.53
+2026-03-18 15:52:43,167 | INFO | uvicorn.access | 127.0.0.1:63489 - "OPTIONS /api/v1/auth/me HTTP/1.1" 200
+2026-03-18 15:52:43,168 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/posts status=200 duration_ms=3.61
+2026-03-18 15:52:43,168 | INFO | uvicorn.access | 127.0.0.1:54070 - "OPTIONS /api/v1/posts HTTP/1.1" 200
+2026-03-18 15:52:43,169 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/auth/me status=200 duration_ms=3.81
+2026-03-18 15:52:43,169 | INFO | uvicorn.access | 127.0.0.1:57491 - "OPTIONS /api/v1/auth/me HTTP/1.1" 200
+2026-03-18 15:52:43,170 | INFO | app.request | Request started method=OPTIONS path=/api/v1/posts client=127.0.0.1
+2026-03-18 15:52:43,171 | INFO | app.request | Request started method=GET path=/api/v1/auth/me client=127.0.0.1
+2026-03-18 15:52:43,172 | INFO | app.request | Request started method=GET path=/api/v1/posts client=127.0.0.1
+2026-03-18 15:52:43,172 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/posts status=200 duration_ms=2.12
+2026-03-18 15:52:43,173 | INFO | uvicorn.access | 127.0.0.1:63489 - "OPTIONS /api/v1/posts HTTP/1.1" 200
+2026-03-18 15:52:43,537 | INFO | app.request | Request completed method=GET path=/api/v1/posts status=200 duration_ms=366.47
+2026-03-18 15:52:43,537 | INFO | uvicorn.access | 127.0.0.1:57491 - "GET /api/v1/posts HTTP/1.1" 200
+2026-03-18 15:52:43,541 | INFO | app.request | Request started method=GET path=/api/v1/posts client=127.0.0.1
+2026-03-18 15:52:43,887 | INFO | app.request | Request completed method=GET path=/api/v1/posts status=200 duration_ms=351.82
+2026-03-18 15:52:43,887 | INFO | uvicorn.access | 127.0.0.1:57491 - "GET /api/v1/posts HTTP/1.1" 200
+2026-03-18 15:52:43,898 | INFO | app.request | Request started method=GET path=/api/v1/posts client=127.0.0.1
+2026-03-18 15:52:43,906 | INFO | app.request | Request completed method=GET path=/api/v1/auth/me status=200 duration_ms=734.09
+2026-03-18 15:52:43,906 | INFO | uvicorn.access | 127.0.0.1:54070 - "GET /api/v1/auth/me HTTP/1.1" 200
+2026-03-18 15:52:43,909 | INFO | app.request | Request started method=GET path=/api/v1/auth/me client=127.0.0.1
+2026-03-18 15:52:44,187 | INFO | app.request | Request completed method=GET path=/api/v1/auth/me status=200 duration_ms=279.21
+2026-03-18 15:52:44,187 | INFO | uvicorn.access | 127.0.0.1:54070 - "GET /api/v1/auth/me HTTP/1.1" 200
+2026-03-18 15:52:44,190 | INFO | app.request | Request started method=GET path=/api/v1/auth/me client=127.0.0.1
+2026-03-18 15:52:44,252 | INFO | app.request | Request completed method=GET path=/api/v1/posts status=200 duration_ms=354.16
+2026-03-18 15:52:44,253 | INFO | uvicorn.access | 127.0.0.1:57491 - "GET /api/v1/posts HTTP/1.1" 200
+2026-03-18 15:52:44,253 | INFO | app.request | Request started method=GET path=/api/v1/posts client=127.0.0.1
+2026-03-18 15:52:44,467 | INFO | app.request | Request completed method=GET path=/api/v1/auth/me status=200 duration_ms=279.59
+2026-03-18 15:52:44,472 | INFO | uvicorn.access | 127.0.0.1:54070 - "GET /api/v1/auth/me HTTP/1.1" 200
+2026-03-18 15:52:44,472 | INFO | app.request | Request started method=GET path=/api/v1/auth/me client=127.0.0.1
+2026-03-18 15:52:44,612 | INFO | app.request | Request completed method=GET path=/api/v1/posts status=200 duration_ms=356.93
+2026-03-18 15:52:44,760 | INFO | app.request | Request completed method=GET path=/api/v1/auth/me status=200 duration_ms=285.12
+2026-03-18 15:53:22,567 | INFO | app.request | Request started method=OPTIONS path=/api/v1/posts/2 client=127.0.0.1
+2026-03-18 15:53:22,567 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/posts/2 status=200 duration_ms=1.17
+2026-03-18 15:53:22,567 | INFO | uvicorn.access | 127.0.0.1:63036 - "OPTIONS /api/v1/posts/2 HTTP/1.1" 200
+2026-03-18 15:53:22,567 | INFO | app.request | Request started method=PATCH path=/api/v1/posts/2 client=127.0.0.1
+2026-03-18 15:53:23,279 | INFO | app.request | Request completed method=PATCH path=/api/v1/posts/2 status=200 duration_ms=706.83
+2026-03-18 15:53:23,280 | INFO | uvicorn.access | 127.0.0.1:63036 - "PATCH /api/v1/posts/2 HTTP/1.1" 200
+2026-03-18 15:53:53,379 | INFO | app.request | Request started method=OPTIONS path=/api/v1/posts/1 client=127.0.0.1
+2026-03-18 15:53:53,379 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/posts/1 status=200 duration_ms=1.46
+2026-03-18 15:53:53,379 | INFO | uvicorn.access | 127.0.0.1:50086 - "OPTIONS /api/v1/posts/1 HTTP/1.1" 200
+2026-03-18 15:53:53,382 | INFO | app.request | Request started method=DELETE path=/api/v1/posts/1 client=127.0.0.1
+2026-03-18 15:53:54,147 | INFO | app.request | Request completed method=DELETE path=/api/v1/posts/1 status=204 duration_ms=762.41
+2026-03-18 15:53:54,147 | INFO | uvicorn.access | 127.0.0.1:50086 - "DELETE /api/v1/posts/1 HTTP/1.1" 204
+2026-03-18 15:54:16,551 | INFO | app.request | Request started method=OPTIONS path=/api/v1/music/search client=127.0.0.1
+2026-03-18 15:54:16,557 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/music/search status=200 duration_ms=1.44
+2026-03-18 15:54:16,557 | INFO | uvicorn.access | 127.0.0.1:62017 - "OPTIONS /api/v1/music/search?q=h&limit=8 HTTP/1.1" 200
+2026-03-18 15:54:16,559 | INFO | app.request | Request started method=GET path=/api/v1/music/search client=127.0.0.1
+2026-03-18 15:54:17,782 | INFO | app.request | Request completed method=GET path=/api/v1/music/search status=200 duration_ms=1222.63
+2026-03-18 15:54:17,782 | INFO | uvicorn.access | 127.0.0.1:62017 - "GET /api/v1/music/search?q=h&limit=8 HTTP/1.1" 200
+2026-03-18 15:54:19,300 | INFO | app.request | Request started method=OPTIONS path=/api/v1/music/search client=127.0.0.1
+2026-03-18 15:54:19,300 | INFO | app.request | Request completed method=OPTIONS path=/api/v1/music/search status=200 duration_ms=1.68
+2026-03-18 15:54:19,300 | INFO | uvicorn.access | 127.0.0.1:62017 - "OPTIONS /api/v1/music/search?q=hs&limit=8 HTTP/1.1" 200
+2026-03-18 15:54:19,309 | INFO | app.request | Request started method=GET path=/api/v1/music/search client=127.0.0.1
+2026-03-18 15:54:20,198 | INFO | app.request | Request completed method=GET path=/api/v1/music/search status=200 duration_ms=891.52
+2026-03-18 15:54:20,202 | INFO | uvicorn.access | 127.0.0.1:62017 - "GET /api/v1/music/search?q=hs&limit=8 HTTP/1.1" 200
+2026-03-18 15:54:22,216 | INFO | app.request | Request started method=PATCH path=/api/v1/posts/2 client=127.0.0.1
+2026-03-18 15:54:22,922 | INFO | app.request | Request completed method=PATCH path=/api/v1/posts/2 status=200 duration_ms=705.71
+2026-03-18 15:54:22,923 | INFO | uvicorn.access | 127.0.0.1:62017 - "PATCH /api/v1/posts/2 HTTP/1.1" 200

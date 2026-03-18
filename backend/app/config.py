@@ -43,6 +43,11 @@ class Settings(BaseSettings):
     SUPABASE_SERVICE_ROLE_KEY: str | None = None
     SUPABASE_STORAGE_BUCKET: str = "posts"
     SUPABASE_MAX_UPLOAD_MB: int = 10
+    SPOTIFY_CLIENT_ID: str | None = None
+    SPOTIFY_CLIENT_SECRET: str | None = None
+    SPOTIFY_SEARCH_MAX_RESULTS: int = 8
+    SPOTIFY_TOKEN_BUFFER_SECONDS: int = 60
+    SPOTIFY_SEARCH_MARKET: str | None = None
     DATABASE_URL: str = "postgresql+psycopg://postgres:postgres@localhost:5432/creator_growth"
     JWT_SECRET_KEY: str = "change_me_in_production"
     JWT_ACCESS_TOKEN_EXPIRE_MINUTES: int = 60

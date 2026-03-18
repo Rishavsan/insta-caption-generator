@@ -8,9 +8,9 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from . import models  # noqa: F401
 from .config import settings
-from .db import Base, engine
+from .db import Base, engine, ensure_schema_updates
 from .logging_config import configure_logging
-from .routers import auth, posts
+from .routers import auth, music, posts
 
 
 logger = configure_logging()
@@ -20,6 +20,7 @@ logger = configure_logging()
 async def lifespan(_: FastAPI):
     logger.info("Starting application")
     Base.metadata.create_all(bind=engine)
+    ensure_schema_updates()
     logger.info("Database tables ensured")
     yield
     logger.info("Stopping application")
@@ -67,4 +68,5 @@ def health() -> dict[str, str]:
 
 
 app.include_router(auth.router, prefix="/api/v1")
+app.include_router(music.router, prefix="/api/v1")
 app.include_router(posts.router, prefix="/api/v1")
